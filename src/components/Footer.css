@@ -1,0 +1,60 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-top,
+  .footer-middle,
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+  
+  .newsletter, .contact, .links, .quick-links, .social-media, .payments {
+    flex: 1;
+  }
+  
+  .subscribe {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .subscribe input {
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+  }
+  
+  .subscribe button {
+    padding: 8px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+  }
+  
+  .footer-middle ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-middle ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-copy {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .social-media a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .payments img {
+    width: 50px;
+    margin-right: 10px;
+  }

@@ -1,9 +1,15 @@
-import Card from './components/Card';
-import './App.css';
+
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ProductListingPage from "./pages/ProductListingPage";
 
 function App() {
   return (
-  <Card/>
+    <Router>
+      <Routes>
+        <Route path="/" element={<ProductListingPage />} />
+      </Routes>
+    </Router>
   );
 }
 
