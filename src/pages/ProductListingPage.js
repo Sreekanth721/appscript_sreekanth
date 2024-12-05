@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Sidebar from "../components/Sidebar";
+import  MainComponents from "../components/MainComponents";
 import Section from "../components/Section";
-import ProductList from "../components/ProductList";
-import Filter from "../components/Filter";  // Import the Filter component
 
 const ProductListingPage = () => {
   const [products, setProducts] = useState([]);
@@ -49,19 +47,7 @@ const ProductListingPage = () => {
     <div>
       <Header />
       <Section />
-      <div style={{ display: "flex" }}>
-        <Sidebar />
-        {/* Filter Component */}
-        <Filter onFilterChange={applyFilter} />
-        <div style={{ flex: 1, padding: "20px" }}>
-          <h2>Discover Our Products</h2>
-
-          
-
-          {/* Display filtered product list */}
-          <ProductList products={filteredProducts} />
-        </div>
-      </div>
+      <MainComponents />
       <Footer />
     </div>
   );

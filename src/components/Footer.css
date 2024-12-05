@@ -1,60 +1,88 @@
-.footer {
+/* Default Footer Styles */
+footer {
     background-color: #000;
     color: #fff;
-    padding: 20px;
-    font-family: Arial, sans-serif;
+    padding: 30px 20px;
   }
   
-  .footer-top,
-  .footer-middle,
-  .footer-bottom {
+  footer .footer-data,
+  footer .bottom-section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 10px 0;
   }
   
-  .newsletter, .contact, .links, .quick-links, .social-media, .payments {
-    flex: 1;
+  footer h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
   }
   
-  .subscribe {
-    display: flex;
-    margin-top: 10px;
-  }
-  
-  .subscribe input {
-    flex: 1;
-    padding: 8px;
-    margin-right: 10px;
-  }
-  
-  .subscribe button {
-    padding: 8px;
-    background-color: #444;
-    color: #fff;
-    border: none;
-  }
-  
-  .footer-middle ul {
-    list-style: none;
+  footer p,
+  footer ul {
+    margin: 0;
     padding: 0;
+    font-size: 1rem;
   }
   
-  .footer-middle ul li {
-    margin: 5px 0;
+  footer ul {
+    list-style: none;
+    line-height: 1.8;
   }
   
-  .footer-copy {
+  /* Button for Dropdown Menu */
+  footer .dropdown-toggle {
+    display: none;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
     text-align: center;
-    margin-top: 20px;
+    width: 100%;
   }
   
-  .social-media a {
-    color: #fff;
-    text-decoration: none;
+  /* Dropdown Content Hidden by Default */
+  footer .dropdown-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
   }
   
-  .payments img {
-    width: 50px;
-    margin-right: 10px;
+  footer .dropdown-content.hidden {
+    display: none;
   }
+  
+  /* Media Queries for Tablet and Mobile Views */
+  @media (max-width: 790px) {
+    footer .footer-data,
+    footer .bottom-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    footer h3 {
+      font-size: 1rem;
+    }
+  
+    footer p,
+    footer ul {
+      font-size: 0.9rem;
+    }
+  
+    footer .dropdown-toggle {
+      display: block;
+    }
+  
+    footer .dropdown-content {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    footer .dropdown-content.hidden {
+      display: none;
+    }
+  }
+  

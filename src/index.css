@@ -48,4 +48,12 @@ body {
   .grid-1 {
     grid-template-columns: 1fr;
   }
-  
+
+
+  /*header responsive design code*/
+  /* Style for Menu icon */
+.menu-icon {
+  display: none; /* Hide by default */
+  font-size: 30px;
+}
+
